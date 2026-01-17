@@ -30,22 +30,7 @@ It focuses on correct SDXL conditioning, memory safety, and direct compatibility
 ---
 
 ## 📂 Project Structure
-
-text
-sdxl-omochi-trainer/
-├─ run.py               Main training script (CLI entry point)
-├─ ui.py                Gradio-based UI launcher
-├─ data/                Training dataset
-│   ├─ image001.png
-│   ├─ image001.txt     Optional caption
-│   ├─ image002.jpg
-│   └─ image002.txt
-├─ output/              Training outputs
-│   ├─ locon_000250.safetensors
-│   └─ locon.safetensors
-├─ train/               (Optional) experimental / helper scripts
-├─ runpod-slim/         (Optional) RunPod / container helpers
-└─ README.md
+<img width="477" height="345" alt="Screenshot from 2026-01-17 14-52-22" src="https://github.com/user-attachments/assets/535247c6-f2a8-4295-879c-5a804baf1784" />
 
 ---
 
