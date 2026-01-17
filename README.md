@@ -51,9 +51,6 @@ python -u run.py --cli --preset vram_23gb
 
 
 Available VRAM presets:
-vram_7gb
-vram_9gb
-vram_10gb
 vram_15gb
 vram_23gb
 vram_47gb
@@ -145,7 +142,7 @@ rank schedule（前半は強く、後半は安定）
 
 AUTOMATIC1111 / ComfyUI 両対応 safetensors 出力
 
-VRAM 7GB〜47GB まで対応
+VRAM 15GB〜47GB まで対応
 
 CLI / Gradio UI 両対応
 
