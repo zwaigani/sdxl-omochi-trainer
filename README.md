@@ -33,18 +33,18 @@ It focuses on correct SDXL conditioning, memory safety, and direct compatibility
 
 text
 sdxl-omochi-trainer/
-├─ run.py              # Main training script (CLI entry point)
-├─ ui.py               # Gradio-based UI launcher
-├─ data/               # Training dataset
+├─ run.py               Main training script (CLI entry point)
+├─ ui.py                Gradio-based UI launcher
+├─ data/                Training dataset
 │   ├─ image001.png
-│   ├─ image001.txt    # Optional caption
+│   ├─ image001.txt     Optional caption
 │   ├─ image002.jpg
 │   └─ image002.txt
-├─ output/             # Training outputs
+├─ output/              Training outputs
 │   ├─ locon_000250.safetensors
 │   └─ locon.safetensors
-├─ train/              # (Optional) experimental / helper scripts
-├─ runpod-slim/        # (Optional) RunPod / container helpers
+├─ train/               (Optional) experimental / helper scripts
+├─ runpod-slim/         (Optional) RunPod / container helpers
 └─ README.md
 
 ---
