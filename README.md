@@ -49,17 +49,11 @@ python -u run.py --cli --preset vram_23gb
 
 
 Available VRAM presets:
-
 vram_7gb
-
 vram_9gb
-
 vram_10gb
-
 vram_15gb
-
 vram_23gb
-
 vram_47gb
 
 ---
@@ -81,12 +75,6 @@ Monitor training logs in real time
 ---
 
 ## 📁 Dataset Format
-data/
- ├─ image001.png
- ├─ image001.txt   # optional caption
- ├─ image002.jpg
- └─ image002.txt
-
 
 If a .txt file exists, its content is used as the prompt
 
@@ -97,11 +85,6 @@ If missing, the filename is used as the prompt
 ## 💾 Output
 
 The trainer outputs dual-key safetensors compatible with major SDXL UIs:
-
-output/
- ├─ locon_000250.safetensors
- └─ locon.safetensors
-
 
 Tested with:
 
