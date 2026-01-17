@@ -5,6 +5,8 @@
 **sdxl-omochi-trainer** is a production-ready SDXL LoCon training script designed for **real-world usability**.  
 It focuses on correct SDXL conditioning, memory safety, and direct compatibility with popular UIs such as **AUTOMATIC1111** and **ComfyUI**.
 
+<img width="1498" height="943" alt="Screenshot from 2026-01-17 14-55-09" src="https://github.com/user-attachments/assets/4c6e7eb0-4ca8-482a-9378-f31766ecdc17" />
+
 ---
 
 ## ✨ Features
