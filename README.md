@@ -31,7 +31,7 @@ It focuses on correct SDXL conditioning, memory safety, and direct compatibility
 
 ## 📂 Project Structure
 
-```text
+text
 sdxl-omochi-trainer/
 ├─ run.py              # Main training script (CLI entry point)
 ├─ ui.py               # Gradio-based UI launcher
