@@ -47,7 +47,9 @@ sdxl-omochi-trainer/
 ├─ runpod-slim/        # (Optional) RunPod / container helpers
 └─ README.md
 
-📦 Installation
+---
+
+## 📦 Installation
 pip install -U torch diffusers transformers safetensors gradio
 
 
@@ -55,7 +57,9 @@ pip install -U torch diffusers transformers safetensors gradio
 
 export PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True
 
-🚀 Quick Start (CLI)
+---
+
+## 🚀 Quick Start (CLI)
 python -u run.py --cli --preset vram_23gb
 
 
@@ -73,7 +77,9 @@ vram_23gb
 
 vram_47gb
 
-🖥 Launch UI (Gradio)
+---
+
+## 🖥 Launch UI (Gradio)
 python ui.py
 
 
@@ -87,7 +93,9 @@ Start / stop training interactively
 
 Monitor training logs in real time
 
-📁 Dataset Format
+---
+
+## 📁 Dataset Format
 data/
  ├─ image001.png
  ├─ image001.txt   # optional caption
@@ -99,7 +107,9 @@ If a .txt file exists, its content is used as the prompt
 
 If missing, the filename is used as the prompt
 
-💾 Output
+---
+
+## 💾 Output
 
 The trainer outputs dual-key safetensors compatible with major SDXL UIs:
 
@@ -114,12 +124,16 @@ AUTOMATIC1111 WebUI
 
 ComfyUI
 
-🧠 Why “omochi”?
+---
+
+## 🧠 Why “omochi”?
 
 Omochi (おもち) expands when heated.
 This trainer helps your SDXL models expand their expressive power — safely, smoothly, and without exploding VRAM.
 
-⚠️ Notes
+---
+
+## ⚠️ Notes
 
 This project focuses on training, not inference
 
@@ -127,9 +141,13 @@ SDXL base 1.0 is recommended
 
 Tested primarily on RTX A6000 / 3090 / 4090
 
-📜 License
+---
+
+## 📜 License
 
 MIT License
+
+---
 
 日本語 README 🇯🇵
 sdxl-omochi-trainer とは？
