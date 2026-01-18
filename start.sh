@@ -1,21 +1,19 @@
 #!/bin/bash
+set -e
 
 echo "Starting Omochi Trainer RunPod environment..."
 
-cd /workspace/sdxl-omochi-trainer || exit 1
+cd /workspace/sdxl-omochi-trainer
 
-# JupyterLab（失敗しても続行）
+# JupyterLab 起動（バックグラウンド）
 jupyter lab \
   --ip=0.0.0.0 \
   --port=8888 \
   --allow-root \
   --no-browser \
   --NotebookApp.token='' \
-  --NotebookApp.password='' \
-  || echo "jupyter failed" &
+  --NotebookApp.password='' &
 
-# GUI（python3 明示、失敗しても続行）
-python3 ui.py --host 0.0.0.0 --port 7860 || echo "ui.py failed"
-
-# ★これが命綱
-sleep infinity
+# Gradio / GUI 起動（フォアグラウンド）
+# ※ app.py / launch.py など、実際のGUI起動ファイル名に合わせて調整
+python ui.py --host 0.0.0.0 --port 7860
