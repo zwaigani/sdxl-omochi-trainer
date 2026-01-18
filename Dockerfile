@@ -16,9 +16,9 @@ RUN pip3 install --upgrade pip
 RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
 
 RUN pip install \
-    diffusers \
-    transformers \
-    accelerate \
+    diffusers==0.25.0 \
+    transformers==4.36.2 \
+    accelerate==0.25.0 \
     bitsandbytes \
     safetensors \
     xformers \
