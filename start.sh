@@ -1,21 +1,21 @@
 #!/bin/bash
+set -e
 
-echo "Starting Omochi Trainer RunPod environment..."
+echo "Starting Omochi Trainer (RunPod)..."
 
-cd /workspace/sdxl-omochi-trainer || exit 1
+cd /workspace
 
-# JupyterLab（失敗しても続行）
+# Jupyter（裏で）
 jupyter lab \
   --ip=0.0.0.0 \
   --port=8888 \
   --allow-root \
   --no-browser \
   --NotebookApp.token='' \
-  --NotebookApp.password='' \
-  || echo "jupyter failed" &
+  --NotebookApp.password='' &
 
-# GUI（python3 明示、失敗しても続行）
-python3 ui.py --host 0.0.0.0 --port 7860 || echo "ui.py failed"
+# Gradio（前面）
+python3 ui.py --host 0.0.0.0 --port 7860
 
-# ★これが命綱
+# 保険
 sleep infinity

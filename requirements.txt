@@ -2,6 +2,11 @@ diffusers==0.25.0
 transformers==4.36.2
 accelerate==0.25.0
 huggingface_hub==0.20.3
+
+torch
+torchvision
+torchaudio
+
 bitsandbytes
 safetensors
 xformers
@@ -9,3 +14,4 @@ opencv-python
 tensorboard
 tqdm
 gradio
+jupyterlab
