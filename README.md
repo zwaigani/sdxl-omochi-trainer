@@ -24,7 +24,7 @@ It focuses on correct SDXL conditioning, memory safety, and direct compatibility
 - 🧊 **OOM-safe LoCon injection**
   - No `.to()` calls inside `forward()`
 - 📦 **VRAM presets**
-  - Works from **7GB to 47GB+**
+  - Works from **15GB to 47GB+**
 - 🖥 **CLI & Gradio UI**
 - 🧪 Designed for **small datasets**
   - Training does not stop prematurely when dataset size is small
