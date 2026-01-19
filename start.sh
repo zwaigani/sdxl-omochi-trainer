@@ -12,7 +12,10 @@ jupyter lab \
   --allow-root \
   --no-browser \
   --NotebookApp.token='' \
-  --NotebookApp.password='' &
+  --NotebookApp.password='' \
+  --ServerApp.allow_origin='*' \
+  --ServerApp.disable_check_xsrf=True \
+  &
 
 # Gradio（前面）
 python3 ui.py --host 0.0.0.0 --port 7860
